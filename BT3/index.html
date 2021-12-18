@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>VinaEnter - Select all</title>
+	<style type="text/css">
+		fieldset{border-radius:5px;border:1px solid green;width:350px;position:relative;}
+		legend{color: green;font-size:18px;font-weight:bold;padding:0 5px;}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<form action="#">
+		<h1>TRUNG TÂM ĐÀO TẠO LẬP TRÌNH VINAENTER EDU</h1>
+	    <p>
+			<label><input type="checkbox" id="checkAll"/> Chọn hết / Bỏ chọn hết</label>
+		</p>
+	    <fieldset>
+	        <legend>Bạn thích cô gái thế nào?</legend>
+	        <p><label><input type="checkbox" /> Tóc dài :D</label></p>
+	        <p><label><input type="checkbox" /> Tóc ngắn ^_^</label></p>
+	        <p><label><input type="checkbox" /> Tóc lưa thưa :( </label></p>
+	        <p><label><input type="checkbox" /> Tóc không có :v</label></p>
+	    </fieldset>
+	</form>
+	<script type="text/javascript">
+		$("#checkAll").click(function(){
+			if($(this).prop("checked")){
+				$("input").prop("checked", true);
+			} else {
+				$("input").prop("checked", false);
+			}
+		})
+	</script>
+</body>
+</html>
